@@ -4,11 +4,11 @@ source :rubygems
 gem 'rack'
 gem 'rake'
 gem 'nokogiri'
-gem 'sqlite3'
+gem 'pg'
+gem 'thin'
 
 # Component requirements
 gem 'rails'
-gem 'mysql2'
 gem 'sass'
 gem 'haml'
 
@@ -20,13 +20,12 @@ end
 
 # Test requirements
 group :test do
-  gem 'mongrel'
-  gem 'ruby-debug'
+  gem 'ruby-debug19'
   gem "capybara"
 
   gem "selenium-webdriver"
   gem 'cucumber-rails'
   gem 'database_cleaner'
-  gem 'rcov'
+  gem 'simplecov'
   gem "faker"
 end
