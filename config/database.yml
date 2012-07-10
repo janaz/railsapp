@@ -13,4 +13,7 @@ test:
 
 production:
   <<: *common
-  database: myapp_production
+  host: ec2-23-23-183-144.compute-1.amazonaws.com/
+  database: bojxzslyxv
+  user: bojxzslyxv
+  password: DtY8BScWU47vZ6cm6HTx
